@@ -1,0 +1,61 @@
+.sky {
+  background: aqua;
+  height: 400px;
+  width: 1905px;
+}
+body {
+  width: 100%;
+}
+.land {
+  background: green;
+  height: 200px;
+  width: 1905px;
+}
+.road {
+  background: rgb(59, 59, 59);
+  height: 300px;
+  width: 1905px;
+}
+.green {
+  height: 55px;
+  position: absolute;
+  margin-top: 55px;
+  margin-left: -200px;
+  animation-name: drive;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-fill-mode: backwards;
+  animation-fill-mode: forwards;
+  animation-timing-function: linear;
+}
+.lines {
+  margin: auto;
+  width: 32.5%;
+  border-style: dashed none none none;
+  position: absolute;
+  margin-top: 140px;
+  transform: scaleX(5);
+  color: white;
+}
+.red {
+  position: absolute;
+  height: 55px;
+  margin-top: 170px;
+  margin-left: -200px;
+  animation-name: drive;
+  animation-fill-mode: backwards;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+  animation-duration: 3.5s;
+  animation-timing-function: linear;
+  animation-delay: 0.5s;
+}
+@keyframes drive {
+  from {
+    transform: translateX(-200px);
+  }
+
+  to {
+    transform: translateX(2150px);
+  }
+}
